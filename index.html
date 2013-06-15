@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      Bugzilla
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="css/bugzilla.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="js/async_storage.js"></script>
+    <script type="text/javascript" src="js/bugzilla.js"></script>
+  </head>
+  <body>
+    <div class="app-status">
+    </div>
+    <div class="bug">
+      <div class="header">
+	<span data-source="bug.header" data-format="header"></span>
+      </div>
+      <div class="detail">
+	<div class="left">
+	  <div class="status">
+	    <span data-source="field.status"></span>
+	    <span data-source="bug.status"></span>
+	  </div>
+	  <div class="whiteboard">
+	    <span data-source="field.whiteboard"></span>
+	    <span data-source="bug.whiteboard"></span>
+	  </div>
+	  <div class="keywords">
+	    <span data-source="field.keywords"></span>
+	    <span data-source="bug.keywords"></span>
+	  </div>
+	  <div class="product">
+	    <span data-source="field.product"></span>
+	    <span data-source="bug.product" data-format="select"></span>
+	  </div>
+	  <div class="component">
+	    <span data-source="field.component"></span>
+	    <span data-source="bug.component" data-format="select"></span>
+	  </div>
+	  <div class="version">
+	    <span data-source="field.version"></span>
+	    <span data-source="bug.version" data-format="select"></span>
+	  </div>
+	  <div class="platform">
+	    <span data-source="field.platform"></span>
+	    <span data-source="bug.platform" data-format="select"></span>
+	    <span data-source="bug.op_sys" data-format="select"></span>
+	  </div>
+	  <div class="importance">
+	    <span>Importance:</span>
+	    <span>
+	      <span data-source="bug.priority" data-format="select"></span>
+	      <span data-source="bug.severity" data-format="select"></span>
+	    </span>
+	  </div>
+	  <div class="assigned_to">
+	    <span data-source="field.assigned_to"></span>
+	    <span data-source="bug.assigned_to" data-format="user"></span>
+	  </div>
+	  <div class="qa_contact">
+	    <span data-source="field.qa_contact"></span>
+	    <span data-source="bug.qa_contact" data-format="user"></span>
+	  </div>
+	  <div class="url">
+	    <span data-source="field.url"></span>
+	    <span data-source="bug.url" data-format="url"></span>
+	  </div>
+	  <div class="depends_on">
+	    <span data-source="field.depends_on"></span>
+	    <ul data-source="bug.depends_on" data-format="bug-list"></ul>
+	  </div>
+	  <div class="blocks">
+	    <span data-source="field.blocks"></span>
+	    <ul data-source="bug.blocks" data-format="bug-list"></ul>
+	  </div>
+	</div>
+	<div class="padding">
+	</div>
+	<div class="right">
+	  <div class="creator">
+	    <span data-source="field.creator"></span>
+	    <span data-source="bug.creator" data-format="user"></span>
+	  </div>
+	  <div class="last_change_time">
+	    <span data-source="field.last_change_time"></span>
+	    <span data-source="bug.last_change_time" data-format="timestamp"></span>
+	  </div>
+	  <div class="cc">
+	    <span data-source="field.cc"></span>
+	    <ul data-source="bug.cc" data-format="user-list"></ul>
+	  </div>
+	</div>
+      </div>
+      <div class="comment-template">
+	<div class="header">
+	  <span data-source="comment.creator" data-format="user"></span>
+	  <span data-source="comment.creation_time" data-format="timestamp"></span>
+	  <span data-source="number"></span>
+	</div>
+	<pre data-source="comment.text"></pre>
+      </div>
+      <div class="comments">
+      </div>
+    </div>
+  </body>
+</html>
